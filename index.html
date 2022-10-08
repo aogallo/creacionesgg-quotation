@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content='#000000' />
+  <meta name='Creaciones G & G' content="" />
+  <link rel='stylesheet' href='styles/styles.css' />
+</head>
+
+<body>
+  <h1>Creaciones G & G</h1>
+  <div class="client">
+    <div class="client__filed">
+      <label for="client" class="client__label">Cliente</label>
+      <input id="client" type="text" class="client__input" />
+    </div>
+    <div class="client__filed">
+      <label for="company" class="client__label">Compa&ntilde;ia</label>
+      <input id="company" type="text" class="client__input" />
+    </div>
+  </div>
+  <form class="form" onsubmit="addProduct()">
+    <div class="form__field">
+      <label for="quantity" class="fomr__label">Cantidad</label>
+      <input id="quantity" type="text" class="form__input" />
+    </div>
+    <div class="form__field">
+      <label for="description" class="fomr__label">Descripici&oacute;n</label>
+      <textarea id="description" class="form__input"></textarea>
+    </div>
+    <div class="form__field">
+      <label for="price" class="fomr__label">Precio unitario</label>
+      <input id="price" type="text" class="form__input" />
+    </div>
+    <div class="form__field">
+      <input type="submit" class="form__input" id="submit" value="Agregar" />
+    </div>
+  </form>
+  <table id="table" class="table">
+    <thead>
+      <tr>
+        <th>Cantidad</th>
+        <th>Descripci&oacute;n</th>
+        <th>Precio unitario</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+  </table>
+  <script src="main.js" />
+</body>
+
+</html>

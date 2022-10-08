@@ -1,0 +1,11 @@
+body {
+  background: tomato;
+}
+
+.form {
+  display: flex;
+}
+
+.form__label {
+
+}

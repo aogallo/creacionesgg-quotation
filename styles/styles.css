@@ -1,5 +1,12 @@
 body {
   background: tomato;
+  height: 100%;
+}
+
+.container {
+  width: 950px;
+  margin: 3em auto;
+  align-items: center;
 }
 
 .form {

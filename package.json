@@ -8,5 +8,9 @@
   },
   "devDependencies": {
     "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "firebase": "^9.12.1",
+    "pdfmake": "^0.2.6"
   }
 }

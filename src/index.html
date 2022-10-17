@@ -7,11 +7,13 @@
   <meta name="theme-color" content='#000000' />
   <meta name='Creaciones G & G' content="" />
   <link rel='stylesheet' href='styles/styles.css' />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.6/pdfmake.min.js" integrity="sha512-7BzHjLXs8xehClrkJEtJtAwXxcbLast87k+XekuItHxrMr/v6POWkoKS2/8CU6DHdIjY+A4NwvsBQ8PxoRH7xQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.6/vfs_fonts.min.js" integrity="sha512-P0bOMePRS378NwmPDVPU455C/TuxDS+8QwJozdc7PGgN8kLqR4ems0U/3DeJkmiE31749vYWHvBOtR+37qDCZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 </head>
-
 <body>
   <main class="container">
-    <h1>Creaciones G & G</h1>
+    <h1 class="title">Creaciones G & G</h1>
     <div class="client">
       <div class="client__filed">
         <label for="client" class="client__label">Cliente</label>
@@ -37,6 +39,8 @@
       </div>
       <div class="form__field">
         <input type="submit" class="form__input" id="submit" value="Agregar" />
+        <button id='generate-pdf' type='button' class="btn">Generar Cotizacion</button>
+        <button id='download-pdf' type='button' class="btn">Descargar Cotizacion</button>
       </div>
     </form>
     <table id="table" class="table">
@@ -50,7 +54,6 @@
       </thead>
     </table>
   </main>
-  <script src="main.js" />
+  <script src="js/main.js"></script>
 </body>
-
 </html>
